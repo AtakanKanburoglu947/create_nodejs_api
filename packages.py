@@ -9,7 +9,9 @@ def install_packages():
         ["npm","install","sqlite3"],
         ["npm", "install", "mysql2"],
         ["npm", "install", "--save-dev", "nodemon"],
-        ["npm", "install", "axios"]
+        ["npm", "install", "axios"],
+        ["npm","install","eslint"],
+        ["npm","install","prettier"],
     ]
     for package in packages[0:3]:
         try:
@@ -39,6 +41,18 @@ def install_packages():
         subprocess.run(packages[8],shell=True)
     else:
         print("Skipped installing Nodemon")
+    print("Install ESLint? (Y/N)")
+    eslint = str(input().lower())
+    if(eslint == "y"):
+        subprocess.run(packages[9],shell=True)
+    else:
+        print("Skipped installing ESLint")
+    print("Install Prettier? (Y/N)")
+    prettier = str(input().lower())
+    if(prettier == "y"):
+        subprocess.run(packages[10],shell=True)
+    else:
+        print("Skipped installing Prettier")
 
 
 
