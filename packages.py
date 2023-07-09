@@ -36,7 +36,7 @@ def install_packages():
     print("Install Nodemon? (Y/N)")
     nodemon = str(input().lower())
     if(nodemon == "y"):
-        subprocess.run(packages[8],shell=True)
+        subprocess.run(packages[7],shell=True)
     else:
         print("Skipped installing Nodemon")
 
