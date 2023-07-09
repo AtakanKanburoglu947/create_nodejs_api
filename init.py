@@ -13,7 +13,6 @@ def create_nodejs_api(project_name):
         os.chdir(new_directory)
         install_packages()
         create_api_folder()
-        os.chdir(new_directory)
         create_config_folder()
         create_env_file()
         create_app()
@@ -25,5 +24,5 @@ def create_nodejs_api(project_name):
 
 
 
-project_name = "nodejs_project"
+project_name = "nodejs_api"
 create_nodejs_api(project_name)

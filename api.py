@@ -12,4 +12,4 @@ def create_api_folder():
     for subdir in subdirectories:
         (api_directory / subdir).mkdir()
 
-    os.chdir(api_directory)
+    os.chdir(current_directory)
