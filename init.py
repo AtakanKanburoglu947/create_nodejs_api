@@ -18,8 +18,8 @@ def create_nodejs_api(project_name):
         create_app()
 
         print("Node.js API created successfully.")
-    except Exception as e:
-        print("An error occurred:", str(e))
+    except Exception as exception:
+        print("An error occurred:", str(exception))
 
 
 
